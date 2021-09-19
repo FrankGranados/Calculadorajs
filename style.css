@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+ 
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #343E46;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    background-color: #6d8a96;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+
+/* GRID DE BOTONES */
+.keys {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: repeat(4, 50px);
+}
+
+/* BOTONES DOBLES */
+[value="+"],
+[value="="] {
+    grid-row: span 2;
+}
+
+[value="0"]{
+    grid-column: span 2;
+}
+
+/*ESTILO DE BOTONES*/
+button {
+    background-color: #4e5e6a;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+    border-color: #89a0a9;
+    border-width: 1px;
+}
+
+button:hover {
+    color: white;
+    background-color: #cf4d26;
+}
+
+/* GRID DE PANTALLA */
+
+.screen {
+    padding-bottom: 5px;
+    color: white;
+    max-width: 206px;
+}
+
+.screen_up {
+    background-color: black;
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+} 
+[id="valor_anterior"]{
+    grid-column: span 5;
+}
+
+.screen_up_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 20px;
+}
+
+#valor_operacion {
+    padding-right: 20px;
+}
+
+.screen_down {
+    background-color: black;
+    font-size: 20px;
+}
+
+.screen_down_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;   
+    padding-top: 0px;
+    padding-right: 10px;
+    height: 28px;
+    
+}
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        
+        <h2></h2>
+        <p></p>
+
+        <main class="container">         
+            <section class="calculadora">
+
+            <div class="screen" id="screen">
+                
+                <section class="screen_up">            
+                <div class="screen_up_item" id="valor_anterior"></div>
+                <div class="screen_up_item" id="valor_operacion"></div>
+                </section>
+
+                <section class="screen_down">
+                <div class="screen_down_item" id="valor_actual">0</div>
+                </section>
+
+            </div>       
+        
+
+            <div class="keys" id="keys">
+                <button class="btn" value="" id="clean" > c </button>
+
+                <button class="btn" value="/" id="operador" > / </button>
+                <button class="btn" value="x" id="operador" > x </button>
+                <button class="btn" value="-" id="operador" > - </button>
+
+                <button class="btn" value="7" id="numero" > 7 </button>
+                <button class="btn" value="8" id="numero" > 8 </button>
+                <button class="btn" value="9" id="numero" > 9 </button>
+
+                <button class="btn" value="+" id="operador" > + </button>
+
+                <button class="btn" value="4" id="numero" > 4 </button>
+                <button class="btn" value="5" id="numero" > 5 </button>
+                <button class="btn" value="6" id="numero" > 6 </button>
+                <button class="btn" value="1" id="numero" > 1 </button>
+                <button class="btn" value="2" id="numero" > 2 </button>
+                <button class="btn" value="3" id="numero" > 3 </button>
+
+                <button class="btn" value="=" id="equal" > = </button>
+
+                <button class="btn" value="0" id="numero" >0</button>
+
+                <button class="dot" value="." id="dot" >.</button>
+                
+
+                
+            </div>
+
+            </section>
+        </main>
+        
+        <script src="./scripts.js"></script>
+
+        
+
+    </body>
+</html>
